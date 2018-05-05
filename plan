@@ -1,0 +1,27 @@
+format
+% ; 0 or + flags ; optional min-field-width ; optional precision ; optional length ; s
+
+structure
+int code flags
+int width
+int precision
+char modifier
+
+no *, $, L, '
+
+
+flags
+#0-+ space
+
+
+length
+hh h l ll j z
+
+
+conversion
+sSpdDioOuUxXcC
+
+- detection du %
+- parse arguments
+- formatage
+- affichage
